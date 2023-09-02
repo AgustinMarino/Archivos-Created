@@ -8,11 +8,11 @@
 include 'menu.php';
 
 
-$ape = $_POST['apellido'];
+$ape = $_POST['PubName'];
 $nom = $_POST['nombre'];
 $ed = $_POST['edad'];
 
-$base = "gestionsubir";
+$base = "Subir";
 $Conexion =  mysqli_connect("localhost","root","",$base);
 if($Conexion){
 	echo "la conexion fue exitosa "."<br>";
@@ -21,7 +21,7 @@ if($Conexion){
 	echo "la conexion ha fallado "."<br>";
 }
 
-$cadena = "UPDATE  persona SET nombre = '$nom', edad = '$ed' WHERE apellido = '$ape'";
+$cadena = "UPDATE  persona SET nombre = '$nom', edad = '$ed' WHERE PubName = '$nam'";
 
 $resultado = mysqli_query($Conexion,$cadena);
 

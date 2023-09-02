@@ -16,8 +16,8 @@ include 'menu.php';
     <h3 class="altaTitulo">FORMULARIO DE ALTA</h3>
 	<form class="altaInput" action="altas.php" method="POST" enctype="multipart/form-data">
 		<div class="grupoInputs">
-		<label for="apellido">Apellido:</label>
-		<input type="text" name="apellido"><br>
+		<label for="PubName">PubName:</label>
+		<input type="text" name="PubName"><br>
 		</div>
 		
 		<div class="grupoInputs">
@@ -26,7 +26,7 @@ include 'menu.php';
         </div>
 
 		<div class="grupoInputs">
-		<label for="edad">Edad:</label>
+		<label for="Precio">Precio</label>
 		<input type="number" name="edad"><br>
 	    </div>
 

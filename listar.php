@@ -16,7 +16,6 @@ include 'menu.php';
 		<thead class="ttitulo">
 			<tr>
 			<th>ProductID</th>
-			<th>user</th>
 			<th>PubName</th>
 			<th>Precio</th>
 			<th>Product</th>
@@ -24,7 +23,7 @@ include 'menu.php';
 		</thead>
 	<?php 
 
-$base = "gestionsubir";
+$base = "Subir";
 $Conexion =  mysqli_connect("localhost","root","",$base);
 
 $cadena= "SELECT * FROM persona ";

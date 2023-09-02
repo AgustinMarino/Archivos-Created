@@ -10,15 +10,15 @@
 
 include 'menu.php';
 
-$ape = $_POST['apellido'];
+$nam = $_POST['PubName'];
 $nom = $_POST['nombre'];
-$ed = $_POST['edad'];
+$ed = $_POST['Precio'];
 $foto = $_FILES["foto"]["tmp_name"];
 $fotoTamanio = $_FILES["foto"]["size"];
 
 // salida de informacion
 
-echo "<h3>".$ape."</h3>". "<h3>".$nom."</h3>". "<h3>".$ed."</h3>";
+echo "<h3>".$nam."</h3>". "<h3>".$nom."</h3>". "<h3>".$ed."</h3>";
 
 if($foto != "none")
 {
@@ -27,10 +27,10 @@ if($foto != "none")
 	$contenido = addslashes($contenido);
 	fclose($fp);
 
-	$base = "gestionsubir";
+	$base = "Subir";
 $Conexion =  mysqli_connect("localhost","root","",$base);
 
-$cadena= "INSERT INTO persona(apellido, nombre, edad,fotoProducto) VALUES ('$ape','$nom','$ed','$contenido')";
+$cadena= "INSERT INTO persona(PubName, nombre, Precio,fotoProducto) VALUES ('$nam','$nom','$ed','$contenido')";
 
 $resultado = mysqli_query($Conexion,$cadena);
 
