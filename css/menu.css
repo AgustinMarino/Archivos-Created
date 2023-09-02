@@ -1,0 +1,42 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(218, 192, 240);
+}
+
+.header{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(155, 93, 190);
+    border-radius: 15px;
+    height: 120px;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.titulo{
+    background-color: rgb(201, 198, 204);
+    text-align: center;
+    color: rgb(68, 66, 66);
+}
+
+.menu{
+    display: flex;
+    justify-content: space-around;
+}
+
+.menu a{
+    text-decoration: none;
+    padding: 10px;
+    color: rgb(71, 69, 69);
+    background-color: gainsboro;
+    margin: 10px;
+}
+
+.menu a:hover{
+    border: 1px solid rgb(56, 55, 55);
+    background-color: rgb(75, 90, 85);
+    color: white;
+    border-radius: 10px;
+}
