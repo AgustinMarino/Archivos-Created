@@ -19,11 +19,6 @@ include 'menu.php';
 		<label for="PubName">PubName:</label>
 		<input type="text" name="PubName"><br>
 		</div>
-		
-		<div class="grupoInputs">
-		<label for="nombre">Nombre:</label>
-		<input type="text" name="nombre"><br>
-        </div>
 
 		<div class="grupoInputs">
 		<label for="Precio">Precio</label>

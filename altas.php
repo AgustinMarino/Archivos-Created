@@ -17,7 +17,7 @@ $fotoTamanio = $_FILES["foto"]["size"];
 
 // salida de informacion
 
-echo "<h3>".$nam."</h3>". "<h3>"."<h3>".$pre."</h3>";
+echo "<h3>".$nam."</h3>"."<h3>".$pre."</h3>";
 
 if($foto != "none")
 {
@@ -26,10 +26,10 @@ if($foto != "none")
 	$contenido = addslashes($contenido);
 	fclose($fp);
 
-	$base = "gestionsubir";
+	$base = "subir";
 $Conexion =  mysqli_connect("localhost","root","",$base);
 
-$cadena= "INSERT INTO subir.persona(PubName, nombre, Precio,fotoProducto) VALUES ('$nam','$pre','$contenido')";
+$cadena= "INSERT INTO persona(PubName,Precio,fotoProducto) VALUES ('$nam','$pre','$contenido')";
 
 $resultado = mysqli_query($Conexion,$cadena);
 

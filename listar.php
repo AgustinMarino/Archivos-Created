@@ -23,7 +23,7 @@ include 'menu.php';
 		</thead>
 	<?php 
 
-$base = "gestionsubir";
+$base = "subir";
 $Conexion =  mysqli_connect("localhost","root","",$base);
 
 $cadena= "SELECT * FROM persona ";
@@ -32,7 +32,7 @@ $consulta = mysqli_query($Conexion,$cadena);
 
 while(  $registro = mysqli_fetch_row($consulta)   ){
 	echo "<tr class='trmain'>";
-	echo "<th>".$registro[0]."</th><th>".$registro[1]."</th><th>".$registro[2]."</th><th>".$registro[3]."</th><th><img src='data:image/jpeg;base64,".base64_encode($registro[4])."' width='200px'/></th>";
+	echo "<th>".$registro[0]."</th><th>".$registro[1]."</th><th>".$registro[2]."</th><th><img src='data:image/jpeg;base64,".base64_encode($registro[3])."' width='200px'/></th>";
 	echo "</tr>";
 }
  ?>
