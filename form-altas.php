@@ -27,7 +27,7 @@ include 'menu.php';
 
 		<div class="grupoInputs">
 		<label for="Precio">Precio</label>
-		<input type="number" name="edad"><br>
+		<input type="number" name="Precio"><br>
 	    </div>
 
 		<div class="grupoInputs">

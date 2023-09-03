@@ -23,7 +23,7 @@ include 'menu.php';
 		</thead>
 	<?php 
 
-$base = "Subir";
+$base = "gestionsubir";
 $Conexion =  mysqli_connect("localhost","root","",$base);
 
 $cadena= "SELECT * FROM persona ";
