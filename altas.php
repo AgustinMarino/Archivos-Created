@@ -33,8 +33,13 @@ $cadena= "INSERT INTO publicaciones(PubName,Precio,fotoProducto) VALUES ('$nam',
 
 $resultado = mysqli_query($Conexion,$cadena);
 
+$SImensaje = "Se inserto la informacion correctamente";
+
+$NOmensaje = "No se inserto la informacion";
+
 if($resultado){
 	print "se ha insertado un registro"."<br>";
+
 
 }else{
 	print "NO se ha generado un registro"."<br>";
@@ -45,3 +50,18 @@ else
 print "No se puede subir el archivo";
 
  ?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+		console.log("se ingreso informacion correctamente");
+
+	</script>
+	
+</body>
+</html>
