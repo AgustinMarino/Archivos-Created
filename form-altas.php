@@ -13,7 +13,7 @@ include 'menu.php';
 <body>
 
 <div class="container">
-    <h3 class="altaTitulo">FORMULARIO DE ALTA</h3>
+    <h3 class="altaTitulo">FORMULARIO DE ALTA - (PUBLICACION DE PRODUCTOS EN CREAT3D)</h3>
 	<form class="altaInput" action="altas.php" method="POST" enctype="multipart/form-data">
 		<div class="grupoInputs">
 		<label for="PubName">PubName:</label>

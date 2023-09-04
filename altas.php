@@ -29,7 +29,7 @@ if($foto != "none")
 	$base = "subir";
 $Conexion =  mysqli_connect("localhost","root","",$base);
 
-$cadena= "INSERT INTO persona(PubName,Precio,fotoProducto) VALUES ('$nam','$pre','$contenido')";
+$cadena= "INSERT INTO publicaciones(PubName,Precio,fotoProducto) VALUES ('$nam','$pre','$contenido')";
 
 $resultado = mysqli_query($Conexion,$cadena);
 
