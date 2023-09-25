@@ -6,7 +6,7 @@
 	<title>Menu general</title>
 	<link rel="stylesheet" href="css/menu.css">
 </head>
-<body>
+<body id="bodymenu">
 	<div class="header">
 	<h3 class="titulo">Menu General</h3>
 	
