@@ -26,7 +26,7 @@ include 'menu.php';
 $base = "subir";
 $Conexion =  mysqli_connect("localhost","root","",$base);
 
-$cadena= "SELECT * FROM publicaciones ";
+$cadena= "SELECT * FROM persona ";
 
 $consulta = mysqli_query($Conexion,$cadena);
 
