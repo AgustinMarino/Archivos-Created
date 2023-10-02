@@ -14,7 +14,7 @@ body{
     border-radius: 20px;
     border-color: aliceblue;
     border-width: 20px;
-    margin-top: 20px;
+    margin-top: 30px;
     margin-left: 10px;
     margin-right: 10px;
 }
@@ -22,7 +22,7 @@ body{
 .titulo{
     background-image: radial-gradient(circle at 48.64% 52.92%, #d143ac 0, #c43cb0 16.67%, #b436b5 33.33%, #a232b9 50%, #8d30bd 66.67%, #7430c2 83.33%, #5532c6 100%);
     text-align: center;
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
 }
 
 .menu{
@@ -34,14 +34,14 @@ body{
     text-decoration: none;
     padding: 10px;
     border-radius: 10px;
-    color: rgb(255, 255, 255);
-    background-color: rgb(9, 13, 255);
+    color: rgb(0, 0, 0);
+    background-color: rgb(194, 194, 219);
     margin: 10px;
 }
 
 .menu a:hover{
     border: 1px solid rgb(56, 55, 55);
-    background-color: rgb(75, 90, 85);
-    color: rgb(255, 255, 255);
+    background-color: rgb(161, 161, 161);
+    color: rgb(0, 0, 0);
     border-radius: 10px;
 }
