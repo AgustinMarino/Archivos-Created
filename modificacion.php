@@ -21,7 +21,7 @@ if($Conexion){
 	echo "la conexion ha fallado "."<br>";
 }
 
-$cadena = "UPDATE  persona SET nombre = '$nom', edad = '$ed' WHERE PubName = '$nam'";
+$cadena = "UPDATE  persona SET PubName = '$nam', Precio = '$pre' WHERE ";
 
 $resultado = mysqli_query($Conexion,$cadena);
 

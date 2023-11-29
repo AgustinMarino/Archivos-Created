@@ -12,10 +12,10 @@ $nam = $_POST['PubName'];
 $base = "Subir";
 $Conexion =  mysqli_connect("localhost","root","",$base);
 if($Conexion){
-	echo "la conexion fue exitosa "."<br>";
+	echo "<h3 class='dato'>la conexion fue exitosa</h3>";
 
 }else{
-	echo "la conexion ha fallado "."<br>";
+	echo "<h3 class='dato'>la conexion ha fallado</h3>";
 }
 
 $cadena= "DELETE FROM persona  WHERE PubName = '$nam'";  
@@ -23,10 +23,10 @@ $cadena= "DELETE FROM persona  WHERE PubName = '$nam'";
 $resultado = mysqli_query($Conexion,$cadena);
 
 if($resultado){
-	echo "se ha eliminado un registro"."<br>";
+	echo "<h3 class='dato'>se ha eliminado un registro</h3>"."<br>";
 
 }else{
-	echo "NO se ha eliminado un registro"."<br>";
+	echo "<h3 class='dato'>NO se ha eliminado un registro</h3>"."<br>";
 	echo mysqli_error($Conexion);
 }
 

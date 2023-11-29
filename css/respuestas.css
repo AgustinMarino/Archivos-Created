@@ -11,10 +11,13 @@
 
 .ttitulo{
     border:1px solid black;
-    background-color:#7f65bd;
+    background-color:#a087da;
     color:rgb(0, 0, 0);
 }
 
 .trmain th{
     border: 1px solid black;
+}
+.h3{
+    margin-left: 20px;
 }
