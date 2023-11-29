@@ -6,23 +6,22 @@ body{
 }
 
 #bodymenu{
-    background-image: linear-gradient(10deg, #f428da 0, #d81be2 16.67%, #b415e9 33.33%, #8519f0 50%, #3323f6 66.67%, #002efc 83.33%, #0037ff 100%);    height: 100vh;
+    background-image: linear-gradient(10deg, rgb(255, 255, 255) , rgb(173, 173, 173) , #7f65bd , #7f65bd, #7f65bd , rgb(173, 173, 173) , rgb(255, 255, 255) );    height: 100vh;
 }
-
 .header{
-    background-image: radial-gradient(circle at 48.64% 52.92%, #d143ac 0, #c43cb0 16.67%, #b436b5 33.33%, #a232b9 50%, #8d30bd 66.67%, #7430c2 83.33%, #5532c6 100%);
-    border-radius: 20px;
+    background-color: grey;
     border-color: aliceblue;
     border-width: 20px;
-    margin-top: 30px;
     margin-left: 10px;
     margin-right: 10px;
+    margin-bottom: 40px
+
 }
 
 .titulo{
-    background-image: radial-gradient(circle at 48.64% 52.92%, #d143ac 0, #c43cb0 16.67%, #b436b5 33.33%, #a232b9 50%, #8d30bd 66.67%, #7430c2 83.33%, #5532c6 100%);
+    background-color: rgb(255, 255, 255);
     text-align: center;
-    color: rgb(0, 0, 0);
+    color: #7f65bd;
 }
 
 .menu{
@@ -35,13 +34,18 @@ body{
     padding: 10px;
     border-radius: 10px;
     color: rgb(0, 0, 0);
-    background-color: rgb(194, 194, 219);
+    background-color: rgb(255, 255, 255);
     margin: 10px;
+    padding: 9px;
 }
 
 .menu a:hover{
     border: 1px solid rgb(56, 55, 55);
-    background-color: rgb(161, 161, 161);
-    color: rgb(0, 0, 0);
+    background-color:#7f65bd;
+    color: rgb(255, 255, 255);
     border-radius: 10px;
+    border-color: white;
+    padding: 9px;
+    cursor: pointer;
+    transition: .3s;
 }

@@ -7,7 +7,7 @@
 include 'menu.php';
 
 
-$ape = $_POST['PubName'];
+$nam = $_POST['PubName'];
 
 $base = "Subir";
 $Conexion =  mysqli_connect("localhost","root","",$base);
