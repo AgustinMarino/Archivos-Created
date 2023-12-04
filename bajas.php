@@ -4,7 +4,7 @@
 
 <?php 
 
-include 'menu.php';
+include 'index.php';
 
 
 $nam = $_POST['PubName'];

@@ -8,7 +8,7 @@
 
 <?php 
 
-include 'menu.php';
+include 'index.php';
 
 $nam = $_POST['PubName'];
 $pre = $_POST['Precio'];
@@ -39,11 +39,11 @@ $SImensaje = "Se inserto la informacion correctamente";
 $NOmensaje = "No se inserto la informacion";
 
 if($resultado){
-	echo "<p class='dato'>se ha insertado un registro</p>"."<br>";
+	echo "<p class='dato'> se ha insertado un registro </p>"."<br>";
 
 
 }else{
-	echo "<p class='dato'>No se ha generado un registro</p>"."<br>";
+	echo "<p class='dato'> No se ha generado un registro</p>"."<br>";
 }
 
 }

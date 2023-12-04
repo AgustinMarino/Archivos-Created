@@ -1,5 +1,5 @@
 <?php
-include 'menu.php';
+include 'index.php';
 ?>
 <!DOCTYPE html>
 <html lang="es">
@@ -16,7 +16,7 @@ include 'menu.php';
 	<form class="altaInput" action="bajas.php" method="POST" >
 	    <div class="grupoInputs">
 		<label for="PubName">PubName:</label>
-        <input type="text" name="PubName"><br>	
+        <input type="text" name="PubName" require><br>	
         </div>
 		
 		<div class="btn-submit">

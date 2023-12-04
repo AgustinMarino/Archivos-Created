@@ -66,3 +66,13 @@ body{
     margin-right: 150px;
     text-align: center;
 }
+.volver{
+    border: 1px solid rgb(56, 55, 55);
+    background-color:#7f65bd;
+    color: rgb(255, 255, 255);
+    border-radius: 10px;
+    border-color: white;
+    padding: 9px;
+    cursor: pointer;
+    transition: .3s;
+}

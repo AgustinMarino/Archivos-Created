@@ -5,32 +5,41 @@
 
 <?php 
 
-include 'menu.php';
+include 'index.php';
 
-
-$ape = $_POST['PubName'];
-$nom = $_POST['nombre'];
-$ed = $_POST['edad'];
+$id = $_POST['id'];
+$nam = $_POST['nam'];
+$pre = $_POST['pre'];
+$foto = $_FILES["foto"]["tmp_name"];
+$fotoTamanio = $_FILES["foto"]["size"];
 
 $base = "Subir";
 $Conexion =  mysqli_connect("localhost","root","",$base);
 if($Conexion){
-	echo "la conexion fue exitosa "."<br>";
+	echo "<p class='dato'> la conexion fue exitosa </p>";
 
 }else{
-	echo "la conexion ha fallado "."<br>";
+	echo "<p class='dato'> la conexion ha fallado </p>";
 }
 
-$cadena = "UPDATE  persona SET PubName = '$nam', Precio = '$pre' WHERE ";
+if($foto != "none")
+{
+	$fp = fopen($foto,"rb");
+	$contenido = fread($fp,$fotoTamanio);
+	$contenido = addslashes($contenido);
+	fclose($fp);
+
+$cadena = "UPDATE  persona SET PubName = '$nam', Precio = '$pre' , fotoProducto = '$contenido' WHERE ProductID = '$id' ";
 
 $resultado = mysqli_query($Conexion,$cadena);
 
 if($resultado){
-	echo "se ha modificado un registro"."<br>";
+	echo "<p class='dato'> se ha modificado un registro </p>";
 
 }else{
-	echo "NO se ha modificado un registro"."<br>";
+	echo "<p class='dato'> NO se ha modificado un registro </p>";
 	echo mysqli_error($Conexion);
+}
 }
  ?>
 
@@ -43,7 +52,7 @@ if($resultado){
 	<title>Document</title>
 </head>
 <body>
-	<a href="form-modificacion.php">Volver</a>
+	<a href="form-modificacion.php" name = "volver">Volver</a>
 	
 </body>
 </html>

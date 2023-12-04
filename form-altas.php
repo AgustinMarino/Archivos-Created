@@ -1,5 +1,5 @@
 <?php
-include 'menu.php';
+include 'index.php';
 ?>
 
 <!DOCTYPE html>
@@ -18,17 +18,17 @@ include 'menu.php';
 	<form class="altaInput" action="altas.php" method="POST" enctype="multipart/form-data">
 		<div class="grupoInputs">
 		<label for="PubName">PubName:</label>
-		<input type="text" name="PubName"><br>
+		<input type="text" name="PubName" require><br>
 		</div>
 
 		<div class="grupoInputs">
 		<label for="Precio">Precio</label>
-		<input type="number" name="Precio"><br>
+		<input type="number" name="Precio" require><br>
 	    </div>
 
 		<div class="grupoInputs">
 		<label for="foto">Archivo</label>
-		<input type="file" name="foto"><br>
+		<input type="file" name="foto" require><br>
 	    </div>
 
 		<div class="btn-submit">
