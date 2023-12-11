@@ -1,5 +1,5 @@
 <?php
-include 'index.php';
+include '../php/index.php';
 ?>
 <!DOCTYPE html>
 <html lang="es">
@@ -7,13 +7,13 @@ include 'index.php';
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Formulario de Modificacion</title>
-	<link rel="stylesheet" href="css/formAltas.css">
+	<link rel="stylesheet" href="../css/formAltas.css">
 </head>
 <body>
 
 <div class="container">
 	<h3 class="altaTitulo">FORMULARIO DE MODIFICACION</h3>
-	<form class="altaInput" action="modificacion.php" method="POST" enctype="multipart/form-data">
+	<form class="altaInput" action="../php/modificacion.php" method="POST" enctype="multipart/form-data">
 	<div class="grupoInputs">
 		<label for="PubName">Campo Clave PubName:</label>
 		<input type="text" name="id" required><br>	

@@ -5,7 +5,7 @@
 
 <?php 
 
-include 'index.php';
+include '../php/index.php';
 
 $id = $_POST['id'];
 $nam = $_POST['nam'];
@@ -52,7 +52,7 @@ if($resultado){
 	<title>Document</title>
 </head>
 <body>
-	<a href="form-modificacion.php" name = "volver">Volver</a>
+	<a href="../php/form-modificacion.php" name = "volver">Volver</a>
 	
 </body>
 </html>

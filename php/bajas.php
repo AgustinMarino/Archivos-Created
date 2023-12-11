@@ -4,7 +4,7 @@
 
 <?php 
 
-include 'index.php';
+include '../php/index.php';
 
 
 $nam = $_POST['PubName'];
@@ -40,7 +40,7 @@ if($resultado){
 	<title>Document</title>
 </head>
 <body>
-	<a href="form-bajas.php">Volver</a>
+	<a href="../php/form-bajas.php">Volver</a>
 	
 </body>
 </html>

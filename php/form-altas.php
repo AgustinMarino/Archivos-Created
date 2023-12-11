@@ -1,5 +1,5 @@
 <?php
-include 'index.php';
+include '../php/index.php';
 ?>
 
 <!DOCTYPE html>
@@ -8,8 +8,8 @@ include 'index.php';
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Formulario de Altas</title>
-	<link rel="stylesheet" href="css/formAltas.css">
-	<link rel="stylesheet" href="css/menu.css">
+	<link rel="stylesheet" href="../css/formAltas.css">
+	<link rel="stylesheet" href="../css/menu.css">
 </head>
 <body>
 

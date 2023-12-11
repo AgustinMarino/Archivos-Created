@@ -1,7 +1,7 @@
 
 <html lang="es">
 	<head>
-	<link rel="stylesheet" href="css/altaBajaModificacion.css">
+	<link rel="stylesheet" href="../css/altaBajaModificacion.css">
 	</head>
 </html>
 
@@ -20,7 +20,7 @@ $fotoTamanio = $_FILES["foto"]["size"];
 echo "<h3 class='subtitulo'>Datos que quieres Ingresar</h3>";
 echo "<h3 class='dato'>".$nam."</h3>"."<h3 class='dato'>".$pre."</h3>";
 
-if($foto != "none")
+if($fotoTamanio > 0)
 {
 	$fp = fopen($foto,"rb");
 	$contenido = fread($fp,$fotoTamanio);
@@ -33,10 +33,6 @@ $Conexion =  mysqli_connect("localhost","root","",$base);
 $cadena= "INSERT INTO persona(PubName,Precio,fotoProducto) VALUES ('$nam','$pre','$contenido')";
 
 $resultado = mysqli_query($Conexion,$cadena);
-
-$SImensaje = "Se inserto la informacion correctamente";
-
-$NOmensaje = "No se inserto la informacion";
 
 if($resultado){
 	echo "<p class='dato'> se ha insertado un registro </p>"."<br>";
